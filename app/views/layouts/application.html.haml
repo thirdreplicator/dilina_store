@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Rails 3 template: Devise, Mongoid, Compass, HAML
+    %title Dilina Store
   = csrf_meta_tag
   = stylesheet_link_tag :all
   = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
@@ -14,11 +14,10 @@
 
       #header
         = render :partial => '/layouts/user_nav'
-        %h1.clear Awesome App Header
+        %h1.clear Dilina Store
 
       #sidebar
-        = render :partial => '/widgets/nav'
-        
+        Left nav
       #content
         - flash.each do |type, message|
           %p{ :class => type }= message
@@ -26,4 +25,4 @@
         = yield
 
       #footer
-        %h3 Awesome App Footer
+        %h3 Dilina Store

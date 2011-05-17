@@ -1,4 +1,3 @@
-class Widget
-  include Mongoid::Document
-  field :name, :type => String
+class Widget < ActiveRecord::Base
+ 
 end
