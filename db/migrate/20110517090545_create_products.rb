@@ -12,4 +12,6 @@ class CreateProducts < ActiveRecord::Migration
   def self.down
     drop_table :products
   end
+
+  
 end

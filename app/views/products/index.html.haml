@@ -3,7 +3,6 @@
 %table
   %tr
     %th Name
-    %th Cost
     %th Price
     %th
     %th
@@ -12,8 +11,9 @@
   - @products.each do |product|
     %tr
       %td= product.name
-      %td= product.cost
-      %td= product.price
+      %td
+        P
+        = product.price
       %td= link_to 'Show', product
       %td= link_to 'Edit', edit_product_path(product)
       %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
