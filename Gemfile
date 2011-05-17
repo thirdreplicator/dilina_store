@@ -1,8 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.5'
-gem 'mongoid'
-gem 'bson_ext'
+gem 'sqlite3'
 gem 'devise'
 gem 'compass'
 gem 'haml'
@@ -18,3 +17,4 @@ group :development, :test do
   gem 'directory_watcher'
   gem 'rev'
 end
+

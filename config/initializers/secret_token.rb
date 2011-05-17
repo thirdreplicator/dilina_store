@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-DilinaStore::Application.config.secret_token = 'ea52ee791f5345eaa7afcab2341d424ccde08b1749e50f0c4c6f5802fb74ea115150037fcd316b683522e7ec2f8dfed2e237ffc6a896981e0fcc4daebc502a53'
+DilinaStore::Application.config.secret_token = 'f769f044c858567a58f6c771230539861230f3ac6ebd7f4854626ff3f891f97b6fd413822570a0cc121d7debba0a6f77f612f6011b2ea2ab8fa415a54c6510a8'
