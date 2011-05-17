@@ -1,0 +1,5 @@
+#widget_nav
+  .nav_item= link_to 'Widgets', widgets_path
+  - if user_signed_in?
+    .nav_item= link_to 'new', new_widget_path
+  

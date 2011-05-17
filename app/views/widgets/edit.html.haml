@@ -1,0 +1,7 @@
+= form_for @widget, :html => {:class => 'bp'} do |f|
+  .form_item
+    %label Name
+    %br
+    = f.text_field :name
+  
+  .form_item= f.submit 'Save'

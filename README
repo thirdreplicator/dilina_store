@@ -1,0 +1,3 @@
+A Rails program used to manage products, inventory, and sales for small stores.
+
+Barcode scanner support included. Just set the end character to TAB.

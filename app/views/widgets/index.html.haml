@@ -1,0 +1,7 @@
+%h2 Widget listing
+
+- @widgets.each do |widget|
+  .widget_one_liner
+    .widget_name= widget.name
+    - if user_signed_in?
+      .widget_edit= link_to 'edit', edit_widget_path( widget )
