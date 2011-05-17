@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Template::Application.load_tasks
+DilinaStore::Application.load_tasks
