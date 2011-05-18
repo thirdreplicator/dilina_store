@@ -1,3 +1,4 @@
+@import "/partials/my_app/utils";
 body.my_app{
   $padding: 15px;
 
@@ -34,5 +35,6 @@ body.my_app{
     background-color: #FFd;
   }
 
-  @import "/partials/models/widget"
+  @import "/partials/models/widget";
+
 } // body.my_app

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110518112650) do
+ActiveRecord::Schema.define(:version => 20110518112918) do
 
   create_table "line_items", :force => true do |t|
     t.integer  "product_id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20110518112650) do
     t.integer  "price"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "barcode"
   end
 
   add_index "products", ["name"], :name => "index_products_on_name"

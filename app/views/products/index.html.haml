@@ -1,3 +1,4 @@
+.float_right= link_to 'New Product', new_product_path
 %h1 Listing products
 
 %table
@@ -10,14 +11,10 @@
 
   - @products.each do |product|
     %tr
-      %td= product.name
+      %td= link_to product.name, product, :class => (product.barcode ? :barcode : :no_barcode)
       %td
         P
         = product.price
-      %td= link_to 'Show', product
-      %td= link_to 'Edit', edit_product_path(product)
-      %td= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete
-
 %br
-
 = link_to 'New Product', new_product_path
+

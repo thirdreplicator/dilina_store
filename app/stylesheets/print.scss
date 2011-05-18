@@ -4,5 +4,5 @@
 body.bp {
   @include blueprint-print(true); }
 
-@import "/partials/my_app";
+@import "/partials/my_app/main";
 

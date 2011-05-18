@@ -107,6 +107,11 @@ body.my_app #footer {
   padding-top: 15px;
   background-color: #FFd;
 }
+/* line 37, ../../app/stylesheets/partials/_my_app.scss */
+body.my_app .float_right {
+  float: right;
+  margin-right: 15px;
+}
 /* line 1, ../../app/stylesheets/partials/models/_widget.scss */
 body.my_app .widget_one_liner {
   background-color: white;
