@@ -4,6 +4,10 @@ class ProductsController < ApplicationController
   def index
     @products = Product.order("name")
 
+    if params[:barcode_only]
+      @products = @products.where("products.barcode IS NOT NULL")
+    end
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @products }

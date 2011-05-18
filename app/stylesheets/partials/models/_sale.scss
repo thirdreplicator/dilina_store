@@ -1,5 +1,5 @@
 #sales_order{
-  background-color: red;
+  margin-top: $padding;
   input {
     text-align: right;
   }
@@ -13,13 +13,11 @@
 
     .amount{
       font-weight: bold;
-      background-color: yellow;
       text-align: right;
-      padding-right: 15px;
+      padding-right: $padding;
     }
 
     .quantity{
-      background-color: blue;
       width:30px;
       input{
         width: 20px;
@@ -28,7 +26,6 @@
   }
 
   .line_item.next{
-    background-color: orange;
     td {
       text-align: center;
 
@@ -41,7 +38,6 @@
 
   .money{
     .amount{
-      background-color: purple;
       input { width: 30px; }
       text-align:center;
       width: 40px;

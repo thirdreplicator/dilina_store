@@ -115,7 +115,7 @@ body.my_app #footer {
 }
 /* line 1, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order {
-  background-color: red;
+  margin-top: 15px;
 }
 /* line 3, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order input {
@@ -136,43 +136,36 @@ body.my_app #sales_order .line_item .name {
 /* line 14, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .amount {
   font-weight: bold;
-  background-color: yellow;
   text-align: right;
   padding-right: 15px;
 }
-/* line 21, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 20, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .quantity {
-  background-color: blue;
   width: 30px;
 }
-/* line 24, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 22, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .quantity input {
   width: 20px;
 }
-/* line 30, ../../app/stylesheets/partials/models/_sale.scss */
-body.my_app #sales_order .line_item.next {
-  background-color: orange;
-}
-/* line 32, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 29, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item.next td {
   text-align: center;
 }
-/* line 35, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 32, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item.next td input {
   width: 200px;
   text-align: center;
 }
-/* line 43, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 40, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .money .amount {
-  background-color: purple;
   text-align: center;
   width: 40px;
 }
-/* line 45, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 41, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .money .amount input {
   width: 30px;
 }
-/* line 51, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 47, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order hr {
   color: black;
   border: 1px solid #666;
