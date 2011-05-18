@@ -78,7 +78,7 @@ body.bp .hide {
   margin-right: 15px;
 }
 
-/* line 3, ../../app/stylesheets/partials/my_app/_main.scss */
+/* line 4, ../../app/stylesheets/partials/my_app/_main.scss */
 body.my_app {
   background-color: pink;
 }
@@ -112,6 +112,71 @@ body.my_app #content {
 body.my_app #footer {
   padding-top: 15px;
   background-color: #FFd;
+}
+/* line 1, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order {
+  background-color: red;
+}
+/* line 3, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order input {
+  text-align: right;
+}
+/* line 6, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order h3 {
+  text-decoration: underline;
+}
+/* line 7, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .name {
+  font-weight: bold;
+}
+/* line 10, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item .name {
+  font-family: Courier;
+}
+/* line 14, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item .amount {
+  font-weight: bold;
+  background-color: yellow;
+  text-align: right;
+  padding-right: 15px;
+}
+/* line 21, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item .quantity {
+  background-color: blue;
+  width: 30px;
+}
+/* line 24, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item .quantity input {
+  width: 20px;
+}
+/* line 30, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item.next {
+  background-color: orange;
+}
+/* line 32, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item.next td {
+  text-align: center;
+}
+/* line 35, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .line_item.next td input {
+  width: 200px;
+  text-align: center;
+}
+/* line 43, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .money .amount {
+  background-color: purple;
+  text-align: center;
+  width: 40px;
+}
+/* line 45, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order .money .amount input {
+  width: 30px;
+}
+/* line 51, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order hr {
+  color: black;
+  border: 1px solid #666;
+  margin-top: 10px;
 }
 /* line 1, ../../app/stylesheets/partials/models/_widget.scss */
 body.my_app .widget_one_liner {

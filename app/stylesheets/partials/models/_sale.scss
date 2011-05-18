@@ -1,0 +1,56 @@
+#sales_order{
+  background-color: red;
+  input {
+    text-align: right;
+  }
+  h3{ text-decoration: underline;}
+  .name{ font-weight: bold; }
+  .line_item{
+
+    .name{
+      font-family: Courier;
+    }
+
+    .amount{
+      font-weight: bold;
+      background-color: yellow;
+      text-align: right;
+      padding-right: 15px;
+    }
+
+    .quantity{
+      background-color: blue;
+      width:30px;
+      input{
+        width: 20px;
+      }
+    }
+  }
+
+  .line_item.next{
+    background-color: orange;
+    td {
+      text-align: center;
+
+      input{
+        width: 200px;
+        text-align:center;
+      }
+    }
+  }
+
+  .money{
+    .amount{
+      background-color: purple;
+      input { width: 30px; }
+      text-align:center;
+      width: 40px;
+    }
+  }
+
+  hr{ 
+    color: black;
+    border: 1px solid #666;
+    margin-top: 10px;
+  }
+}

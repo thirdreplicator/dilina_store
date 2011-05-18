@@ -1,5 +1,6 @@
 @import "/partials/my_app/globals";
 @import "/partials/my_app/utils";
+
 body.my_app{
 
   background-color: pink;
@@ -35,6 +36,6 @@ body.my_app{
     background-color: #FFd;
   }
 
-  @import "/partials/models/widget";
+  @import "/partials/models/all";
 
 } // body.my_app

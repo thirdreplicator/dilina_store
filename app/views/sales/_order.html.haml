@@ -1,0 +1,45 @@
+#sales_order
+  %h3 Customer Order
+
+  %table
+
+    %tr.line_item
+      %td
+        %span.name Coke 6oz
+      %td.quantity
+        %input{:name => 'line_item_qty', :value => 1}
+      %td.amount 25
+
+    %tr.line_item
+      %td
+        %span.name Chips
+      %td.quantity
+        %input{:name => 'line_item_qty', :value => 1}
+      %td.amount 15
+
+    %tr.line_item.next
+      %td{:colspan => 3, :align => 'center'}
+        Next item:
+        %input{:type => 'text', :name => 'line_item_barcode'}
+
+    %tr#sales_total.money
+      %td.name Total
+      %td
+      %td.amount
+        %input{ :name => 'sales_total', :value => 55}
+
+    %tr
+      %td{:colspan => 3}
+        %hr
+
+    %tr#sales_cash_received.money
+      %td.name Cash Received
+      %td
+      %td.amount
+        %input{:type => 'text', :name => 'sales_cash_received'}
+
+    %tr#sales_change.money
+      %td.name Change
+      %td
+      %td.amount
+        %input{:type => 'text', :name => 'sales_change', :value => 500}
