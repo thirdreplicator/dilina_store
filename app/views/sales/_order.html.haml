@@ -135,7 +135,7 @@
     };
 
     // Load the database and index it
-    $.get("http://localhost:3001/products.json", function(data){
+    $.get("http://localhost:3000/products.json", function(data){
       d = data;
       products.make_indexes(data);
       //$('#output').text(data[0].product.name);
@@ -146,7 +146,14 @@
         var out = '';
         var input = $('#next_line_item').val();
         if (products.is_number(e.which)){
-          ids = products.barcode_index[input];
+          
+          bids = products.barcode_index[input];
+          bids = (bids ? bids : []); // set to [] if no matches
+          
+          ids = products.id_index[input];
+          ids = (ids ? ids : []);
+          
+          ids = ids.concat(bids);
           //alert(typeof ids[0]);
           if (ids && ids[0]){
             out = products.products_to_string(ids);
