@@ -1,3 +1,5 @@
-A Rails program used to manage products, inventory, and sales for small stores.
+A Rails program used to manage products, inventory, and sales for small stores in third world countries (100-200 products, unstable electricity, and no internet connection).
 
-Barcode scanner support included. Just set the end character to TAB.
+The intent for this particular version is to make it run like a desktop application, because the store that I'm building it for is in a third world country without internet access.  Weekly dumps to a flash drive, uploaded to Google Docs is how we'll be able to know what's going on with the app.  I configured the store's Ubuntu box to login without a password, boot up a browser, and load this app ( using Nginx/Passenger).
+
+Barcode scanner support included by way of Javascript. Just set the end character to TAB.
