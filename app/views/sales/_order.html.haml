@@ -88,7 +88,7 @@
         for (var i in products) {
           var p = products[i];
           var id = p.product.id;
-          this.id_index[id] = p;
+          this.id_index[id] = [p];
         }
       },
       
@@ -96,7 +96,7 @@
         for (var i in products) {
           var p = products[i];
           var barcode = p.product.barcode;
-          this.barcode_index[barcode] = p;
+          this.barcode_index[barcode] = [p];
         }        
       },
       
@@ -108,7 +108,30 @@
       
       name_index : {},
       id_index : {},
-      barcode_index: {}
+      barcode_index: {},
+      
+      // helper functions
+      is_number : function (n) {
+        return n > 47 && n < 58;
+      },
+      
+      delay : (function(){
+        var timer = 0;
+        return function(callback, ms){
+          clearTimeout (timer);
+          timer = setTimeout(callback, ms);  
+        };
+      })(),
+      
+      products_to_string : function( product_array ){
+        var output_string = '';
+        x = product_array;
+        for( i in product_array) {
+          var p = product_array[i];
+          output_string += p.product.name + "\n";
+        }
+        return output_string;
+      }
     };
 
     // Load the database and index it
@@ -118,4 +141,23 @@
       //$('#output').text(data[0].product.name);
     });
     
+    $('#next_line_item').keypress(function(e){
+      products.delay(function () {
+        var out = '';
+        var input = $('#next_line_item').val();
+        if (products.is_number(e.which)){
+          ids = products.barcode_index[input];
+          //alert(typeof ids[0]);
+          if (ids && ids[0]){
+            out = products.products_to_string(ids);
+          }
+        }else{
+          ids = products.name_index[input];
+          if (ids && ids[0]){
+            out = products.products_to_string(ids);
+          }
+        }
+        $('#output').text(out);
+      }, 100);
+    });
   });
