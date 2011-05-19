@@ -523,7 +523,7 @@ body.two-col #sidebar {
   display: inline;
   float: left;
   margin-right: 10px;
-  width: 310px;
+  width: 350px;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #sidebar {
@@ -534,7 +534,7 @@ body.two-col #content {
   display: inline;
   float: left;
   margin-right: 0;
-  width: 630px;
+  width: 590px;
 }
 /* line 147, ../../../../../.rvm/gems/ruby-1.9.2-p180/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
 * html body.two-col #content {

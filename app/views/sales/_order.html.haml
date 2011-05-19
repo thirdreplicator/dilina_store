@@ -31,3 +31,91 @@
     %tr#sales_finished
       %td{:colspan => 3}
         %input{:type => 'submit', :value => 'Finished'}
+        
+:javascript
+
+  
+  $(function (){
+
+    products = {
+  
+      word_to_index : function(word, product) {
+        // Index a string to the thing being indexed. A pure function.
+        // E.g. $.keys("cat", 42) 
+        // => {c : [42], a : [42], t : [42], ca : [42], at : [42], cat : [42] }
+        var index = {};
+        
+        for(var frag_length=1; frag_length <= word.length; frag_length++){
+          for(var pos=0; pos < word.length; pos++){
+            var substring = word.slice(pos, pos + frag_length);
+            index[substring] = [product];
+          }
+        }
+        return index;
+      },
+
+      concat_indexes : function(index_0, index_1) {
+        // Description: Join two indexes (hash tables) together.  A pure function.
+        // Pre: Each index is an object literal with string keys and array values.
+        // Post: Returns the merge of index_0, concatenating values when keys are the same.
+        // E.g. concat_indexes({ a: [1], b: [2] }, { a: [3], c: [4] })
+        // => {a: [3, 1], b: [2], c: [4]}
+        for (var property in index_1){
+          if (index_0[property]){
+            index_0[property] = $.unique( index_0[property].concat(index_1[property]) );
+          }else {
+            index_0[property] = index_1[property];
+          }
+        }// for
+        return index_0;
+      },
+    
+
+      make_name_index : function (products){
+        // Create the name index.
+        // Pre: Input an array of json objects representing products.
+        // Post: side effect: assigned products.name_index to the substring index of product names
+      
+        this.name_index = {};
+        for (var i in products) {
+          var p = products[i];
+          var name = p.product.name;
+          this.name_index = this.concat_indexes(this.name_index, this.word_to_index( name, p ));
+        }// for
+      }, // make_name_index
+
+      make_id_index : function(products) {
+        for (var i in products) {
+          var p = products[i];
+          var id = p.product.id;
+          this.id_index[id] = p;
+        }
+      },
+      
+      make_barcode_index : function(products) {
+        for (var i in products) {
+          var p = products[i];
+          var barcode = p.product.barcode;
+          this.barcode_index[barcode] = p;
+        }        
+      },
+      
+      make_indexes : function(prod_data_array) {
+        this.make_name_index(prod_data_array);
+        this.make_id_index(prod_data_array);
+        this.make_barcode_index(prod_data_array);      
+      },
+      
+      name_index : {},
+      id_index : {},
+      barcode_index: {}
+    };
+
+    // Load the database and index it
+    $.get("http://localhost:3001/products.json", function(data){
+      d = data;
+      products.make_indexes(data);
+      //$('#output').text(data[0].product.name);
+    });
+    
+  });
