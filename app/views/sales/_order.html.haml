@@ -3,7 +3,7 @@
 
   %table
     = render :partial => '/line_items/line_item'
-    = render :partial => '/line_items/mext'
+    = render :partial => '/line_items/mext' # "next" is misspelled "mext" to avoid a bug.
 
     %tr
       %td{:colspan => 3}
@@ -27,3 +27,7 @@
       %td
       %td.amount
         %input{:type => 'text', :name => 'sales_change', :value => 0}
+    
+    %tr#sales_finished
+      %td{:colspan => 3}
+        %input{:type => 'submit', :value => 'Finished'}

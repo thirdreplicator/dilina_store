@@ -117,59 +117,63 @@ body.my_app #footer {
 body.my_app #sales_order {
   margin-top: 15px;
 }
-/* line 3, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 4, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order input {
   text-align: right;
 }
-/* line 6, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 8, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order h3 {
   text-decoration: underline;
 }
-/* line 7, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 10, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .name {
   font-weight: bold;
 }
-/* line 10, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 14, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .name {
   font-family: Courier;
 }
-/* line 14, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 18, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .amount {
   font-weight: bold;
   text-align: right;
   padding-right: 15px;
 }
-/* line 20, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 24, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .quantity {
   width: 30px;
 }
-/* line 22, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 26, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item .quantity input {
   width: 20px;
 }
-/* line 29, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 33, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item.next td {
   text-align: center;
 }
-/* line 32, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 36, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .line_item.next td input {
   width: 200px;
   text-align: center;
 }
-/* line 40, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 44, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .money .amount {
   text-align: center;
   width: 40px;
 }
-/* line 41, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 45, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order .money .amount input {
   width: 30px;
 }
-/* line 47, ../../app/stylesheets/partials/models/_sale.scss */
+/* line 51, ../../app/stylesheets/partials/models/_sale.scss */
 body.my_app #sales_order hr {
   color: black;
   border: 1px solid #666;
   margin-top: 10px;
+}
+/* line 58, ../../app/stylesheets/partials/models/_sale.scss */
+body.my_app #sales_order #sales_finished td {
+  text-align: center;
 }
 /* line 1, ../../app/stylesheets/partials/models/_widget.scss */
 body.my_app .widget_one_liner {

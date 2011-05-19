@@ -1,8 +1,9 @@
 %head
-%title Dilina Store
-= csrf_meta_tag
-= stylesheet_link_tag :all
-= stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
-= stylesheet_link_tag 'compiled/print.css',  :media => 'print'
-/[if lt IE 8]
-= stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
+  %title Dilina Store
+  = csrf_meta_tag
+  = javascript_include_tag 'jquery-1.6.1.min'
+  = stylesheet_link_tag :all
+  = stylesheet_link_tag 'compiled/screen.css', :media => 'screen, projection'
+  = stylesheet_link_tag 'compiled/print.css',  :media => 'print'
+  /[if lt IE 8]
+  = stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'

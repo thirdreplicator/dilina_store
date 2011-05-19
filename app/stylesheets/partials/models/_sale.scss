@@ -1,10 +1,14 @@
 #sales_order{
   margin-top: $padding;
+  
   input {
     text-align: right;
   }
+  
   h3{ text-decoration: underline;}
+
   .name{ font-weight: bold; }
+
   .line_item{
 
     .name{
@@ -48,5 +52,9 @@
     color: black;
     border: 1px solid #666;
     margin-top: 10px;
+  }
+  
+  #sales_finished{
+    td {text-align: center; }
   }
 }
